@@ -6,7 +6,7 @@ const keypress = require('keypress');
 // Управление.
 // Настроим соответствия нажатий на клавиши и действий в игре.
 
-export const keyboard = {
+const keyboard = {
   w: () => console.log('w'),
   a: () => console.log('a'),
   s: () => console.log('s'),
@@ -16,7 +16,7 @@ export const keyboard = {
 
 // Какая-то функция.
 
-export function runInteractiveConsole() {
+function runInteractiveConsole() {
   keypress(process.stdin);
   process.stdin.on('keypress', (ch, key) => {
     if (key) {
@@ -32,5 +32,7 @@ export function runInteractiveConsole() {
   });
   process.stdin.setRawMode(true);
 }
+
+module.exports = { runInteractiveConsole, keyboard }
 
 

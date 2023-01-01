@@ -7,7 +7,7 @@ class View {
     console.clear();
     console.log(trackAsArg.join(''));
     console.log('\n\n');
-    console.log(`Created by SedoyGnom with love`);
+    // console.log(`Created by SedoyGnom with love`);
   }
 }
 

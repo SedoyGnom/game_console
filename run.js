@@ -1,7 +1,7 @@
 const Game = require('./src/Game');
 
 // Инициализация игры с настройками.
-const game = new Game(30);
+const game = new Game(20);
 
 
 // Запуск игры.
